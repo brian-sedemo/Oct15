@@ -1,0 +1,15 @@
+# CONFIDENTIAL — Nimbus AI Internal Use Only — Project SNOW
+[project]
+name = "snow-training"
+version = "0.9.0"
+description = "Nimbus AI — Snowfall frontier model training stack (PROPRIETARY)"
+requires-python = ">=3.11"
+authors = [{ name = "Nimbus AI Frontier Model Group", email = "fmg@nimbus.ai" }]
+license = { text = "Proprietary — see LICENSE" }
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.setuptools.packages.find]
+include = ["training*"]
