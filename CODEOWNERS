@@ -1,0 +1,22 @@
+# Project SNOW — code ownership (Frontier Model Group)
+# CONFIDENTIAL — Nimbus AI Internal. Reviews from listed owners are mandatory.
+
+*                       @praman @nimbus-fmg-leads
+
+# Crown jewels — model architecture & training. Requires 2 approvals.
+/training/              @praman @mwebb
+/training/model/        @praman @lpetrov @nimbus-fmg-research
+/training/model/attention.py   @praman   # Glacier Attention — IP-critical
+/training/data/         @skim @nimbus-data-eng
+
+# Serving
+/inference/             @lpetrov @dosei
+
+# Gateway / console
+/gateway/               @dosei
+
+# Infrastructure & secrets — Platform + Security review required
+/infra/                 @mwebb @nimbus-platform
+/config/                @mwebb @nimbus-security
+*.tfvars                @nimbus-security
+.env*                   @nimbus-security
